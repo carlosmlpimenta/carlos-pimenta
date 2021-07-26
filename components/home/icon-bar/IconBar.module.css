@@ -27,3 +27,15 @@
 		filter: hue-rotate(-50deg) saturate(80%);
 	}
 }
+
+@media only screen and (max-width: 1300px) {
+	.bar {
+		bottom: 2vh;
+		height: calc(40px * 1.2);
+		width: 380px;
+	}
+
+	.bar > img {
+		width: 40px;
+	}
+}

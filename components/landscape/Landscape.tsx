@@ -5,17 +5,16 @@ import Image from '@libs/components/image/Image';
 import icons from '@images/icons.json';
 import profile from '@images/profile.json';
 import styles from './Landscape.module.css';
+import useWindowSize from '@libs/hooks/useWindowSize';
 
 function Landscape() {
-	let isLandscape = false;
-
-	useEffect(() => {
-		isLandscape = window.innerHeight >= window.innerWidth;
-	}, [window.innerHeight, window.innerWidth]);
+	const { width, height } = useWindowSize();
+	const isLandscape = width > height;
+	console.log(isLandscape, width, height);
 
 	return (
 		<FlexColCenter
-			className={`${styles.block} ${isLandscape ? styles.hide : ''}`}
+			className={`${styles.block} ${isLandscape ? styles.hide : styles.show}`}
 		>
 			<Image
 				src={profile.logo}

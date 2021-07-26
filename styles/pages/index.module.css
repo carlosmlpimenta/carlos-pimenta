@@ -138,3 +138,13 @@
 .right {
 	transform: translateX(50%) rotate3d(0, -1, 0, 90deg);
 }
+
+@media only screen and (max-width: 1300px) {
+	.logo {
+		position: absolute;
+		width: 60px;
+		top: 5vh;
+		left: 3.5vw;
+		z-index: 1;
+	}
+}
