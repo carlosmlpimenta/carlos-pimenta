@@ -8,8 +8,8 @@ import styles from './Landscape.module.css';
 
 function Landscape() {
 	let isLandscape = useMemo<boolean>(() => {
-		return window.innerHeight >= window.innerWidth;
-	}, [window.innerHeight, window.innerWidth]);
+		return window && window.innerHeight >= window.innerWidth;
+	}, [window && window.innerHeight, window && window.innerWidth]);
 
 	return (
 		<FlexColCenter
