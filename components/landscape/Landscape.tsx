@@ -16,9 +16,11 @@ function Landscape() {
 
 		changeWindowSize();
 
+		window.addEventListener('orientationchange', changeWindowSize);
 		window.addEventListener('resize', changeWindowSize);
 
 		return () => {
+			window.removeEventListener('orientationchange', changeWindowSize);
 			window.removeEventListener('resize', changeWindowSize);
 		};
 	}, []);

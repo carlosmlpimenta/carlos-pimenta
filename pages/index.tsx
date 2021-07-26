@@ -33,7 +33,7 @@ function index() {
 				<title>Carlos Pimenta</title>
 				<meta
 					name='viewport'
-					content='width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0'
+					content='width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimal-ui'
 				/>
 			</Head>
 			<Loader />
