@@ -13,7 +13,7 @@
 .title {
 	font-family: var(--font-hand);
 	font-size: 80px;
-	font-weight: 200;
+	font-weight: 100;
 	color: var(--title-blue);
 	margin-bottom: 5px;
 	margin-left: -20px;
