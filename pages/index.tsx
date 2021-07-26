@@ -8,6 +8,7 @@ import Contacts from '@components/contacts/main/Contats';
 import Head from 'next/head';
 import IconBar from '@components/home/icon-bar/IconBar';
 import Image from '@libs/components/image/Image';
+import Landscape from '@components/landscape/Landscape';
 import Lines from '@components/home/lines/Lines';
 import Loader from '@components/loader/Loader';
 import Presentation from '@components/home/presentation/Presentation';
@@ -32,6 +33,7 @@ function index() {
 				<title>Carlos Pimenta</title>
 			</Head>
 			<Loader />
+			<Landscape />
 			<section
 				id='home-card'
 				className={`${styles.card} ${styles.home} ${

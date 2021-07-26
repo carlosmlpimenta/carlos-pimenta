@@ -1,0 +1,45 @@
+.block {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+		80deg,
+		rgba(50, 74, 95, 0.85),
+		rgba(27, 42, 65, 0.95)
+	);
+	z-index: 500000;
+}
+
+.hide {
+	opacity: 0;
+	z-index: -1000;
+	transition: opacity ease-in-out 1s, z-index step-end 1s;
+}
+
+.logo {
+	width: 70px;
+}
+
+.title {
+	font-family: var(--font-hand);
+	font-size: 70px;
+	font-weight: 100;
+	color: white;
+	margin-top: 20px;
+	user-select: none;
+}
+
+.info {
+	font-family: var(--font-title);
+	font-size: 18px;
+	font-weight: 300;
+	color: white;
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.landscape {
+	width: 100px;
+}
