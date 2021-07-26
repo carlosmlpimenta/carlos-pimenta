@@ -1,0 +1,74 @@
+:root {
+	/*
+			COLOR SCHEME
+	*/
+	--c1: #0c1821;
+	--c2: #1b2a41;
+	--c3: #324a5f;
+	--c4: #087e8b;
+	--c5: #cdd1de;
+
+	--title-blue: #7ac8d6;
+	--neon-blue: #43c3f1;
+
+	--link-blue: #00ccff;
+	--link-blue-hover: #0099ff;
+
+	/*
+			FONTS
+	*/
+	--font-hand: 'Lato', sans-serif;
+	--font-title: 'Montserrat', sans-serif;
+	--font-text: 'Open Sans', sans-serif;
+}
+
+html,
+body {
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
+body {
+	font-family: var(--font-text);
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	overflow: visible;
+}
+
+a {
+	text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+	padding: 0;
+}
+
+img {
+	display: block;
+	object-fit: cover;
+	user-select: none;
+}
+
+::-webkit-scrollbar {
+	width: 0; /* Remove scrollbar space */
+	background: transparent; /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+	background: transparent;
+}

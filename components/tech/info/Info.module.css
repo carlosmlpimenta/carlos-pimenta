@@ -1,0 +1,92 @@
+.box {
+	position: relative;
+	width: 50%;
+	height: 80%;
+	align-self: center;
+}
+
+.box > h5 {
+	font-family: var(--font-title);
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	color: var(--title-blue);
+}
+
+.box > h5:not(:first-of-type) {
+	margin-top: 20px;
+}
+
+.project {
+	position: relative;
+	margin: 8px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.project > img {
+	width: 375px;
+}
+
+.project > div {
+	position: absolute;
+	opacity: 0;
+	top: -1px;
+	left: -1px;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	z-index: 1;
+	font-family: var(--font-title);
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	transition: opacity 0.3s ease-in-out;
+	background: linear-gradient(
+		-30deg,
+		rgba(50, 74, 95, 0.7),
+		rgba(27, 42, 65, 0.9)
+	);
+	user-select: none;
+}
+
+.row > a {
+	position: relative;
+	margin: 8px;
+	transition: transform 0.3s ease-in-out;
+}
+
+.row > a > img {
+	width: 180px;
+}
+
+.row > a > div {
+	position: absolute;
+	opacity: 0;
+	top: -1px;
+	left: -1px;
+	width: calc(100% + 2px);
+	height: calc(100% + 2px);
+	z-index: 1;
+	font-family: var(--font-title);
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	transition: opacity 0.3s ease-in-out;
+	background: linear-gradient(
+		-30deg,
+		rgba(50, 74, 95, 0.7),
+		rgba(27, 42, 65, 0.9)
+	);
+	user-select: none;
+}
+
+@media (hover) {
+	.project:hover,
+	.row > a:hover {
+		transform: scale(1.05);
+	}
+
+	.project:hover > div,
+	.row > a:hover > div {
+		opacity: 1;
+	}
+}

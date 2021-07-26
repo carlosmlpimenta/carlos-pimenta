@@ -1,0 +1,45 @@
+/*
+		-----
+		ABOUT
+		-----
+*/
+
+.going,
+.going2 {
+	width: 100vw;
+	z-index: -10;
+}
+
+.back {
+	position: absolute;
+	width: 100vw;
+	height: 300vw;
+	z-index: -20;
+	background: linear-gradient(to bottom, var(--c2), var(--c3));
+}
+
+.going2 {
+	transform: scaleY(-1);
+}
+
+.going {
+	margin-bottom: -50vw;
+	mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 255),
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+.going2 {
+	margin-top: -50vw;
+	mask-image: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 255),
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0)
+	);
+}

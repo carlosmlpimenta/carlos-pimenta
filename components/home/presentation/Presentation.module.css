@@ -1,0 +1,29 @@
+.box {
+	position: absolute;
+	left: 8vw;
+}
+
+.pic {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	align-self: start;
+}
+
+.title {
+	font-family: var(--font-hand);
+	font-size: 80px;
+	font-weight: 200;
+	color: var(--title-blue);
+	margin-bottom: 5px;
+	margin-left: -20px;
+	user-select: none;
+}
+
+.sub-title {
+	font-family: var(--font-title);
+	font-size: 20px;
+	font-weight: 400;
+	color: white;
+	user-select: none;
+}

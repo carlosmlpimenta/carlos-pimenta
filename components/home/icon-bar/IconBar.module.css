@@ -1,0 +1,29 @@
+.bar {
+	position: absolute;
+	bottom: 3vh;
+	height: calc(50px * 1.2);
+	width: 500px;
+	z-index: 2;
+	user-select: none;
+}
+
+.bar > img {
+	width: 50px;
+	filter: hue-rotate(-90deg) saturate(40%);
+	transition: all 0.2s ease-in-out;
+	will-change: transform filter;
+	cursor: pointer;
+}
+
+.active {
+	cursor: default !important;
+	transform: scale(1.15) !important;
+	filter: hue-rotate(-50deg) saturate(80%) !important;
+}
+
+@media (hover) {
+	.bar > img:hover {
+		transform: scale(1.15);
+		filter: hue-rotate(-50deg) saturate(80%);
+	}
+}

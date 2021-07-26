@@ -1,0 +1,96 @@
+.box {
+	position: relative;
+	width: 50%;
+	height: 100%;
+	user-select: none;
+}
+
+.box > h5 {
+	font-family: var(--font-title);
+	font-size: 50px;
+	font-weight: 300;
+	color: white;
+	margin-bottom: 10px;
+}
+
+.box > span {
+	position: absolute;
+	font-family: var(--font-title);
+	font-size: 30px;
+	font-weight: 600;
+	animation-name: dropping;
+	animation-timing-function: ease-in;
+	animation-iteration-count: infinite;
+	animation-fill-mode: both;
+	z-index: 5;
+}
+
+.box > span:nth-of-type(1) {
+	color: #e34c26;
+	left: 32vw;
+	animation-duration: 6s;
+	animation-delay: 1s;
+}
+
+.box > span:nth-of-type(2) {
+	color: #264de4;
+	left: 12vw;
+	animation-duration: 5s;
+	animation-delay: 1.8s;
+}
+
+.box > span:nth-of-type(3) {
+	color: #f0db4f;
+	left: 26vw;
+	animation-duration: 8s;
+	animation-delay: 3s;
+}
+
+.box > span:nth-of-type(4) {
+	color: #007acc;
+	left: 6vw;
+	animation-duration: 7s;
+	animation-delay: 2.4s;
+}
+
+.box > span:nth-of-type(5) {
+	color: #764abc;
+	left: 36vw;
+	animation-duration: 9s;
+	animation-delay: 0.2s;
+}
+
+.box > span:nth-of-type(6) {
+	color: #61dbfb;
+	left: 17vw;
+	animation-duration: 3.5s;
+	animation-delay: 1.2s;
+}
+
+.box > span:nth-of-type(7) {
+	color: transparent;
+	background: linear-gradient(to right, black, white);
+	background-clip: text;
+	left: 14vw;
+	animation-duration: 6.5s;
+	animation-delay: 0.5s;
+}
+
+.box > span:nth-of-type(8) {
+	color: #f1502f;
+	left: 21vw;
+	animation-duration: 10s;
+	animation-delay: 2.1s;
+}
+
+@keyframes dropping {
+	from {
+		opacity: 0.3;
+		transform: translateY(-1400%);
+	}
+
+	to {
+		opacity: 1;
+		transform: translateY(1400%);
+	}
+}

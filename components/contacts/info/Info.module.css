@@ -1,0 +1,72 @@
+.box {
+	width: 50%;
+}
+
+.box > h5 {
+	font-family: var(--font-title);
+	font-size: 40px;
+	font-weight: 300;
+	margin-bottom: 10px;
+	color: var(--title-blue);
+}
+
+.box > h5:not(:first-of-type) {
+	margin-top: 30px;
+}
+
+.contacts > a {
+	font-family: var(--font-title);
+	font-size: 16px;
+	font-weight: 400;
+	display: flex;
+	align-items: center;
+	color: var(--link-blue);
+	margin-bottom: 10px;
+	overflow: hidden;
+	white-space: nowrap;
+	transition: all 0.15s ease-in-out;
+	will-change: color width;
+}
+
+.contacts > a:nth-of-type(1) {
+	width: 20px;
+	margin-right: 20px;
+}
+
+.contacts > a:nth-of-type(2) {
+	width: 30px;
+}
+
+.contacts > a > i {
+	font-size: 30px;
+	margin-right: 5px;
+}
+
+@media (hover) {
+	.contacts > a:nth-of-type(1):hover {
+		width: 155px;
+	}
+
+	.contacts > a:nth-of-type(2):hover {
+		width: 275px;
+	}
+
+	.contacts > a:hover {
+		color: var(--link-blue-hover);
+	}
+}
+
+.socials > a > i {
+	font-size: 30px;
+	margin: 0 12px;
+	color: var(--link-blue);
+	transition: all 0.15s ease-in-out;
+	will-change: color transform;
+}
+
+@media (hover) {
+	.socials > a:hover > i {
+		color: var(--link-blue-hover);
+		transform: scale(1.1);
+	}
+}

@@ -1,0 +1,140 @@
+.computer {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 60vw;
+	height: 100vh;
+}
+
+.card {
+	position: relative;
+	width: 100vw;
+	height: 100vh;
+	z-index: 1;
+	transition: all 0.5s ease-in-out;
+	will-change: opacity transform;
+}
+
+.background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: -2;
+}
+
+.logo {
+	position: absolute;
+	width: 80px;
+	top: 5vh;
+	left: 7.5vw;
+	z-index: 1;
+}
+
+.back-gradient {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+		-30deg,
+		rgba(50, 74, 95, 0.7),
+		rgba(27, 42, 65, 0.9)
+	);
+	z-index: -1;
+}
+
+.home {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.pregoingimage {
+	position: absolute;
+	bottom: -100vh;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 10;
+	transform: scaleY(-1);
+	mask-image: linear-gradient(
+		to top,
+		rgba(0, 0, 0, 255),
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+.pregoing {
+	position: absolute;
+	top: 100vh;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(
+		-150deg,
+		rgba(50, 74, 95, 0.7),
+		rgba(27, 42, 65, 0.9)
+	);
+	z-index: 12;
+	mask: linear-gradient(
+		to bottom,
+		rgba(0, 0, 0, 255),
+		rgba(0, 0, 0, 0.7),
+		rgba(0, 0, 0, 0.3),
+		rgba(0, 0, 0, 0)
+	);
+}
+
+.about {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.tech {
+	position: absolute;
+	top: 0;
+	right: 0;
+	transition: transform 0.5s ease-in-out;
+}
+
+.contacts {
+	position: fixed;
+	top: 0;
+	right: 0;
+}
+
+.showc {
+	opacity: 1;
+	z-index: 5000;
+	transform: scale(1) rotate3d(0, 0, 0, 360deg);
+	transition: transform ease-in-out 1s, opacity ease-in-out 1s,
+		z-index step-start 1s;
+}
+
+.hidec {
+	opacity: 0;
+	z-index: -100;
+	transform: scale(0) rotate3d(1, 0, 0, 120deg);
+	transition: transform ease-in-out 0.7s, opacity ease-in-out 0.7s,
+		z-index step-end 0.7s;
+}
+
+.show {
+	transform: translateX(0) rotate3d(0, 0, 0, 90deg);
+}
+
+.left {
+	transform: translateX(-50%) rotate3d(0, 1, 0, 90deg);
+}
+
+.right {
+	transform: translateX(50%) rotate3d(0, -1, 0, 90deg);
+}

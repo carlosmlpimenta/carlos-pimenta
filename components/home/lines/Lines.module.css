@@ -1,0 +1,46 @@
+.lines {
+	width: 55vw;
+	height: 20vw;
+	position: absolute;
+	top: -8vw;
+	right: -8vw;
+	transform: rotate(25deg);
+	display: flex;
+	flex-direction: column-reverse;
+	align-items: flex-end;
+	opacity: 0.7;
+}
+
+.lines > span {
+	width: 80%;
+	height: 2px;
+	margin-bottom: 1vw;
+}
+
+.lines > span:nth-of-type(1) {
+	margin-bottom: 8vw;
+}
+
+.lines > span:nth-of-type(odd) {
+	background: linear-gradient(
+		to left,
+		rgb(98, 51, 173),
+		rgb(73, 51, 173),
+		var(--neon-blue),
+		var(--title-blue),
+		rgba(50, 74, 95, 0.3),
+		rgba(50, 74, 95, 0.1)
+	);
+}
+
+.lines > span:nth-of-type(even) {
+	background: linear-gradient(
+		to right,
+		rgb(98, 51, 173),
+		rgb(73, 51, 173),
+		var(--neon-blue),
+		var(--title-blue),
+		rgba(50, 74, 95, 0.3),
+		rgba(50, 74, 95, 0.1)
+	);
+}

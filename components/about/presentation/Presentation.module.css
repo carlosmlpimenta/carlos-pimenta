@@ -1,0 +1,101 @@
+.box {
+	width: 95vw;
+}
+
+.box > div:nth-of-type(1) {
+	width: 40%;
+}
+
+.box > div:nth-of-type(2) {
+	position: relative;
+	width: 60%;
+}
+
+.pic {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	margin-bottom: 10px;
+}
+
+.title {
+	font-family: var(--font-hand);
+	font-size: 65px;
+	font-weight: 200;
+	color: var(--title-blue);
+	user-select: none;
+}
+
+.info {
+	width: calc(100% - 50px * 1.2);
+}
+
+.bar {
+	width: calc(50px * 1.2);
+	height: 300px;
+	user-select: none;
+}
+
+.bar > img {
+	width: 50px;
+	filter: hue-rotate(-90deg) saturate(40%);
+	transition: all 0.2s ease-in-out;
+	will-change: transform filter;
+	cursor: pointer;
+}
+
+.active {
+	cursor: default !important;
+	transform: scale(1.15) !important;
+	filter: hue-rotate(-50deg) saturate(80%) !important;
+}
+
+@media (hover) {
+	.bar > img:hover {
+		transform: scale(1.15);
+		filter: hue-rotate(-50deg) saturate(80%);
+	}
+}
+
+.top {
+	transform: translateY(-90%) rotate3d(-1, 0, 0, 90deg);
+}
+
+.bottom {
+	transform: translateY(90%) rotate3d(1, 0, 0, 90deg);
+}
+
+.show {
+	transform: translateY(-50%);
+	opacity: 1;
+}
+
+.hide {
+	opacity: 0;
+}
+
+.text {
+	position: absolute;
+	top: 50%;
+	width: 90%;
+	transition: all 0.5s ease-in-out;
+	will-change: opacity transform;
+}
+
+.text > h5 {
+	text-indent: 15px;
+	font-family: var(--font-title);
+	font-size: 40px;
+	font-weight: 300;
+	color: var(--title-blue);
+	margin-bottom: 10px;
+}
+
+.text > p {
+	color: white;
+	font-size: 14px;
+	line-height: 22px;
+	margin-bottom: 8px;
+	text-indent: 15px;
+	text-align: justify;
+}
