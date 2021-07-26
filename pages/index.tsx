@@ -31,6 +31,10 @@ function index() {
 		<main>
 			<Head>
 				<title>Carlos Pimenta</title>
+				<meta
+					name='viewport'
+					content='width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0'
+				/>
 			</Head>
 			<Loader />
 			<Landscape />
@@ -78,13 +82,10 @@ function index() {
 				/>
 				<div className={styles.pregoing} />
 			</section>
-
 			<Between />
-
 			<section id='about-card' className={`${styles.card} ${styles.about}`}>
 				<About />
 			</section>
-
 			<section
 				id='tech-card'
 				className={`${styles.card} ${styles.tech} ${
@@ -93,7 +94,6 @@ function index() {
 			>
 				<Tech />
 			</section>
-
 			<section
 				id='contacts-card'
 				className={`${styles.card} ${styles.contacts} ${
