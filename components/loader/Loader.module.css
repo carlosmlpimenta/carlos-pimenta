@@ -26,21 +26,8 @@
 	margin-top: 20px;
 	margin-bottom: 50px;
 	user-select: none;
-	text-align: center;
 }
 
 .loading {
 	width: 100px;
-}
-
-@media only screen and (max-width: 600px) {
-	.logo {
-		width: 45px;
-	}
-
-	.title {
-		font-size: 40px;
-		margin-top: 15px;
-		margin-bottom: 20px;
-	}
 }

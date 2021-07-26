@@ -1,4 +1,4 @@
-import { Suspense, useEffect, useState } from 'react';
+import { Suspense, useState } from 'react';
 
 import About from '@components/about/main/About';
 import Between from '@components/about/between/Between';
@@ -27,19 +27,10 @@ function index() {
 
 	if (choose !== 'home') setTimeout(() => setShow(false), 1000);
 
-	useEffect(() => {
-		/mobile/i.test(navigator.userAgent) &&
-			!location.hash &&
-			setTimeout(function () {
-				window.scrollTo(0, 1);
-			}, 100);
-	}, []);
-
 	return (
 		<main>
 			<Head>
 				<title>Carlos Pimenta</title>
-				<meta name='viewport' content='width=device-width, initial-scale=1' />
 			</Head>
 			<Loader />
 			<Landscape />
