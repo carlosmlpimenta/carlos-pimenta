@@ -5,6 +5,7 @@ import Between from '@components/about/between/Between';
 import { Canvas } from '@react-three/fiber';
 import Computer from '@components/models/Computer';
 import Contacts from '@components/contacts/main/Contats';
+import Head from 'next/head';
 import IconBar from '@components/home/icon-bar/IconBar';
 import Image from '@libs/components/image/Image';
 import Lines from '@components/home/lines/Lines';
@@ -27,6 +28,9 @@ function index() {
 
 	return (
 		<main>
+			<Head>
+				<title>Carlos Pimenta</title>
+			</Head>
 			<Loader />
 			<section
 				id='home-card'

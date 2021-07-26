@@ -15,8 +15,10 @@ function IconBar() {
 
 	useEffect(() => {
 		const keep = () => {
-			window.scrollTo(0, 0);
-			document.getElementById(choose + '-card')?.scrollIntoView();
+			setTimeout(() => {
+				window.scrollTo(0, 0);
+				document.getElementById(choose + '-card')?.scrollIntoView();
+			}, 10);
 		};
 
 		setTimeout(keep, 50);

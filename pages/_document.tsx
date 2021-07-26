@@ -13,8 +13,6 @@ export default class MyDocument extends Document {
 						href='https://res.cloudinary.com/cdn-cmlp/image/upload/v1627063829/carlos-pimenta/profile/logo-small.png'
 					/>
 
-					<title>Carlos Pimenta</title>
-
 					<link rel='preconnect' href='https://fonts.googleapis.com' />
 					<link
 						rel='preconnect'

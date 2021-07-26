@@ -24,10 +24,10 @@
 	font-weight: 100;
 	color: white;
 	margin-top: 20px;
-	margin-bottom: 90px;
+	margin-bottom: 50px;
 	user-select: none;
 }
 
 .loading {
-	width: 60px;
+	width: 100px;
 }
