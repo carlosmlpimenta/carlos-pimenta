@@ -37,8 +37,8 @@ export default class MyDocument extends Document {
 						rel='stylesheet'
 					/>
 
-					<Script
-						src='https://kit.fontawesome.com/0f207d9f23.js'
+					<link
+						href='https://kit.fontawesome.com/0f207d9f23.js'
 						crossOrigin='anonymous'
 					/>
 				</Head>
