@@ -12,7 +12,11 @@ function Loader() {
 		return () => setLoading(true);
 	}, []);
 
-	return <FlexColCenter className={styles.block}></FlexColCenter>;
+	return (
+		<FlexColCenter
+			className={`${styles.block} ${loading ? '' : styles.hide}`}
+		></FlexColCenter>
+	);
 }
 
 export default Loader;
