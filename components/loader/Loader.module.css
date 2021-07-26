@@ -15,12 +15,12 @@
 }
 
 .logo {
-	width: 80px;
+	width: 70px;
 }
 
 .title {
 	font-family: var(--font-hand);
-	font-size: 80px;
+	font-size: 70px;
 	font-weight: 100;
 	color: white;
 	margin-top: 20px;
@@ -29,5 +29,5 @@
 }
 
 .loading {
-	width: 50px;
+	width: 40px;
 }
