@@ -27,21 +27,14 @@ function index() {
 
 	if (choose !== 'home') setTimeout(() => setShow(false), 1000);
 
-	useEffect(() => {
-		function navi() {
-			document.location.href = '#';
-		}
-
-		window.addEventListener('load', navi);
-
-		return window.removeEventListener('load', navi);
-	}, []);
-
 	return (
 		<main>
 			<Head>
 				<title>Carlos Pimenta</title>
-				<meta name='viewport' content='width=device-width, initial-scale=1' />
+				<meta
+					name='viewport'
+					content='width=device-width, user-scalable=0, initial-scale=1.0, maximum-scale=1.0, minimal-ui'
+				/>
 			</Head>
 			<Loader />
 			<Landscape />
