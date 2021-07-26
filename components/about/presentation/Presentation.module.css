@@ -24,6 +24,7 @@
 	font-weight: 200;
 	color: var(--title-blue);
 	user-select: none;
+	text-align: center;
 }
 
 .info {
@@ -98,4 +99,38 @@
 	margin-bottom: 8px;
 	text-indent: 15px;
 	text-align: justify;
+}
+
+@media only screen and (max-width: 1300px) {
+	.title {
+		font-size: 50px;
+	}
+
+	.pic {
+		width: 120px;
+		height: 120px;
+	}
+
+	.text > h5 {
+		font-size: 30px;
+	}
+
+	.text > p {
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.text {
+		margin-left: 5%;
+		width: 80%;
+	}
+
+	.bar {
+		width: calc(40px * 1.2);
+		height: 250px;
+	}
+
+	.bar > img {
+		width: 40px;
+	}
 }
