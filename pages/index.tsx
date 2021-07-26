@@ -8,6 +8,7 @@ import Contacts from '@components/contacts/main/Contats';
 import IconBar from '@components/home/icon-bar/IconBar';
 import Image from '@libs/components/image/Image';
 import Lines from '@components/home/lines/Lines';
+import Loader from '@components/loader/Loader';
 import Presentation from '@components/home/presentation/Presentation';
 import { RootState } from '@redux/store';
 import Tech from '@components/tech/main/Tech';
@@ -17,8 +18,7 @@ import styles from '@styles/pages/index.module.css';
 import { useSelector } from 'react-redux';
 
 function index() {
-	const choose =
-		useSelector((state: RootState) => state.choose.choose) || 'home';
+	const choose = useSelector((state: RootState) => state.choose.choose);
 	const [show, setShow] = useState(true);
 
 	if (choose === 'home' && !show) setTimeout(() => setShow(true), 500);
@@ -27,6 +27,7 @@ function index() {
 
 	return (
 		<main>
+			<Loader />
 			<section
 				id='home-card'
 				className={`${styles.card} ${styles.home} ${

@@ -1,0 +1,15 @@
+.block {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background: linear-gradient(60deg, #666, #333);
+	z-index: 50000000;
+}
+
+.hide {
+	opacity: 0;
+	z-index: -100000;
+	transition: opacity ease-in-out 1s, z-index step-end 1s;
+}
