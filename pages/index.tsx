@@ -17,7 +17,8 @@ import styles from '@styles/pages/index.module.css';
 import { useSelector } from 'react-redux';
 
 function index() {
-	const choose = useSelector((state: RootState) => state.choose.choose);
+	const choose =
+		useSelector((state: RootState) => state.choose.choose) || 'home';
 	const [show, setShow] = useState(true);
 
 	if (choose === 'home' && !show) setTimeout(() => setShow(true), 500);
