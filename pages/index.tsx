@@ -27,6 +27,16 @@ function index() {
 
 	if (choose !== 'home') setTimeout(() => setShow(false), 1000);
 
+	useEffect(() => {
+		function navi() {
+			document.location.href = '#';
+		}
+
+		window.addEventListener('load', navi);
+
+		return window.removeEventListener('load', navi);
+	}, []);
+
 	return (
 		<main>
 			<Head>
