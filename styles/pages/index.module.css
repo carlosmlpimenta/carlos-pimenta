@@ -3,13 +3,15 @@
 	top: 0;
 	right: 0;
 	width: 60vw;
-	height: 100vh;
+	height: 100%;
 }
 
 .card {
 	position: relative;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
 	z-index: 1;
 	transition: all 0.5s ease-in-out;
 	will-change: opacity transform;
@@ -20,7 +22,7 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	z-index: -2;
 }
 
@@ -37,7 +39,7 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	background: linear-gradient(
 		-30deg,
 		rgba(50, 74, 95, 0.7),
@@ -55,12 +57,11 @@
 
 .pregoingimage {
 	position: absolute;
-	bottom: -100vh;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
 	z-index: 10;
-	transform: scaleY(-1);
+	transform: scaleY(-1) translateY(-100%);
 	mask-image: linear-gradient(
 		to top,
 		rgba(0, 0, 0, 255),
@@ -72,15 +73,16 @@
 
 .pregoing {
 	position: absolute;
-	top: 100vh;
 	left: 0;
 	width: 100vw;
 	height: 100vh;
+	max-height: 100%;
 	background: linear-gradient(
 		-150deg,
 		rgba(50, 74, 95, 0.7),
 		rgba(27, 42, 65, 0.9)
 	);
+	transform: translateY(100%);
 	z-index: 12;
 	mask: linear-gradient(
 		to bottom,

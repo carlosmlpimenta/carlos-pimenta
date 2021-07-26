@@ -3,7 +3,9 @@
 	top: 0;
 	left: 0;
 	width: 100vw;
-	height: 100vh;
+	height: 100%;
+	min-height: 100%;
+	max-height: 100%;
 	z-index: 500000;
 	background: linear-gradient(80deg, rgb(50, 74, 95), rgb(27, 42, 65));
 }
