@@ -27,14 +27,6 @@ function index() {
 
 	if (choose !== 'home') setTimeout(() => setShow(false), 1000);
 
-	useEffect(() => {
-		/mobile/i.test(navigator.userAgent) &&
-			!location.hash &&
-			setTimeout(function () {
-				window.scrollTo(0, 1);
-			}, 100);
-	}, []);
-
 	return (
 		<main>
 			<Head>
