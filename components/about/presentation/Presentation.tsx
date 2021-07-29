@@ -39,13 +39,6 @@ function Presentation() {
 							curoius to find new ways to do what I like and innovate.
 						</p>
 						<p>
-							A lot of my resiliance and working filosify came from competing in
-							online gaming competitions since I was 11 years old, on a scene
-							that was really difficult and very different that what it is
-							today. Back then I would compete with players twice my age and
-							still be successfull and that mentality never stopped.
-						</p>
-						<p>
 							Now I'm trying to get an edge on every one else in different ways,
 							like trying to get ahead and become familiar with new technologies
 							that will become the future. I'm also always looking for advice
