@@ -36,7 +36,7 @@ function Presentation() {
 						</p>
 						<p>
 							I've been connected with technologies since a young age, always
-							curoius to find new ways to do what I like and innovate.
+							curious to find new ways to do what I like and innovate.
 						</p>
 						<p>
 							Now I'm trying to get an edge on every one else in different ways,
@@ -61,23 +61,6 @@ function Presentation() {
 							I decided to enroll in the Computer Science course because of my
 							interest in technology and software developing. However it has
 							been a very different experience from what I expected.
-						</p>
-						<p>
-							This feeling comes from several different caracteristics of this
-							course that I do not agree with, starting with the technologies
-							taught, the problem being that most of them aren't used in the
-							"Real World", normally being very old and clunky to use.
-						</p>
-						<p>
-							I also feel like it mostly doesn't prepare us for real world
-							developing nor team enviroments, focusing on unrelastic projects
-							created to test specific features of the language instead of
-							something that has an actual purpose.
-						</p>
-						<p>
-							I felt more enganged in the classes where we would discuss theory
-							or team management than on pratical ones, since I felt that there
-							I was actually learning a skill I would use in the future.
 						</p>
 						<p>
 							My college career ended with 18 classes complete out of 30, when I
